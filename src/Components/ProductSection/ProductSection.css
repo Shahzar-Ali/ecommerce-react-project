@@ -1,0 +1,40 @@
+.productsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 100px 0px;
+}
+
+.productsection h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.productsection hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.productsection-item{
+    margin: 50px 10px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .productsection h1{
+        font-size: 30px;
+    }
+
+    .productsection hr {
+        width: 150px;
+    }
+
+  
+}

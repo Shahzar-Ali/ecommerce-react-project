@@ -1,0 +1,142 @@
+.navbar {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.menu-item {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu-item:hover {
+    color: #a0aec0;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-button {
+    background-color: #2563eb;
+    color: white;
+    border-radius: 9999px;
+    padding: 10px 30px;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #3b82f6;
+}
+
+.cart-icon {
+    height: 40px;
+    cursor: pointer;
+}
+
+.cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-top: -24px;
+    margin-left: -8px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    color: white;
+    font-size: 12px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px; 
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        z-index: 1000;
+    }
+
+
+    .menu-content.active {
+        display: flex;
+    }
+
+    .action-container {
+        display: none;
+    }
+
+    .action-container.active{
+        display: flex;
+    }
+
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .menu-item {
+        padding: 10px 20px;
+    }
+
+    .login-button{
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+
+    .cart-icon{
+        height: 30px;
+    }
+
+    .cart-count{
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
+    }
+    .logo{
+        height: 45px;
+    }
+}
